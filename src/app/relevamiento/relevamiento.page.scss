@@ -1,0 +1,41 @@
+#container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(83, 112, 152); 
+
+}
+
+.seleccion {
+    --background: rgba(24, 49, 83, 1); 
+    margin-top: 10%;
+
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    z-index: 9999; /* Asegura que esté por encima de todo el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 1s linear infinite; /* Aplica la animación "rotate" */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

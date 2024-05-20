@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <!-- Initial white background with the app icon -->
+  <div class="initial-splash" [ngClass]="{'hidden': !showInitialSplash}">
+    <img src="../../assets/img/building.png" class="initial-icon" alt="App Icon">
+  </div>
+
+  <!-- Main content with animations -->
+  <div class="main-content" [ngClass]="{'hidden': showInitialSplash, 'fade-in': isFadedIn}">
+    <div class="splash-background">
+      <ion-img src="../../assets/img/building.png" class="app-icon"></ion-img>
+      <h1 class="app-name">Relevamiento visual</h1>
+      <h2 class="app-name" style="color: #ccc;">Agustina Bilotta</h2>
+      <h3 class="app-name" style="color: #b8b1b1;">4° A</h3>
+    </div>
+  </div>
+</ion-content>

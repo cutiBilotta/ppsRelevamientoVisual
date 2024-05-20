@@ -1,0 +1,28 @@
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <body>
+      
+    
+
+    <div class="ion-text-center">
+      <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" >Graficos</h1>
+      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Cosas {{this.dato}}s</h2>
+    </div>
+    <br> <br>
+      <div *ngIf="this.dato== 'linda' ">
+        <canvas #tortaCanvas style="height: 35vh;"></canvas>
+      </div>
+
+      <div  *ngIf="this.dato== 'fea' " >
+        <canvas #barraCanvas style="height: 35vh;" ></canvas>
+      </div>
+
+      <br>
+      <div #imagenDiv id="imagenDiv">
+      </div>
+
+
+    </body>
+  </div>
+</ion-content>

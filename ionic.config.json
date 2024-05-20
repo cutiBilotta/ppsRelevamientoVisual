@@ -1,0 +1,7 @@
+{
+  "name": "ppsRelevamientoVisual",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

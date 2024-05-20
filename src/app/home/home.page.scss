@@ -1,0 +1,26 @@
+#container {
+  background-color: rgba(24, 49, 83, 1);
+  width: 100vw; /* Ocupar toda la anchura disponible */
+  height: 100vh; /* Ocupar toda la altura disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cosasLindasContainer {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en una columna */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre las imágenes */
+  width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
+  height: auto; /* Ajustar la altura automáticamente */
+}
+
+.img {
+  width: 60%; /* Ajustar el tamaño de las imágenes según tus necesidades */
+  height: auto;
+  border: 5px solid black;
+  border-radius: 10%;
+}

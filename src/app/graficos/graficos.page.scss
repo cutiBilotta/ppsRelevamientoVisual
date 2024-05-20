@@ -1,0 +1,21 @@
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(160, 178, 223);
+    display: flex;
+    justify-content: center; /* Centra los hijos horizontalmente */
+    align-items: center;
+    text-align: center;
+
+}
+
+ion-content {
+    --ion-background-color: transparent; /* Para asegurarte de que no haya color de fondo */
+  }
+  
+  body {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+
+ 

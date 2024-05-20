@@ -1,0 +1,72 @@
+
+<ion-content>
+  <div id="container">
+
+    <br><br>
+
+    <div style="display: flex; justify-content: center;">
+      <img src="../../assets/img/building.png" height="100px">
+    </div>
+
+    <br>
+   <ion-card style="background-color: #365d52;" >
+ 
+    <ion-card-content>
+     <ion-item>
+       <ion-label>Email: </ion-label>
+       <ion-input type="email" [(ngModel)]="usuario.correo" name="email"></ion-input>
+     </ion-item>
+     
+     <br> 
+     
+     <ion-item>
+       <ion-label>Clave: </ion-label>
+       <ion-input type="password" [(ngModel)]="usuario.password" name="password"></ion-input>
+     </ion-item>
+     
+   <br> 
+     <div class="ion-align-items-center ion-text-center">
+       <ion-button color="medium" block (click)="verificarUsuarioExistente()">Ingresar</ion-button>
+       <br>  
+ 
+ 
+       <div *ngIf="mensaje">
+           {{mensaje}}
+       </div>
+     </div>
+ 
+ 
+   </ion-card-content>
+ </ion-card>
+
+ <div *ngIf="mostrarSpinner" class="spinner">
+  <img src="../../assets/img/load-removebg-preview.png" height="30px" class="spinner">
+</div>
+ <br>
+ 
+ <ion-card class="ion-text-center" style="background-color: #c8cac9;" >
+   <ion-card-header class="ion-text-center ion-text-bold">
+     Ingreso Rápido
+   </ion-card-header>
+ 
+   <div class="ion-align-items-center ion-text-center" style="display: inline-block; justify-content: center;align-items: center;">
+    <img src="../../assets/img/user.PNG" height="60px"><br>
+     <ion-button shape="round" color="secondary" block (click)="autocompletarUsurio1()">Admin</ion-button>
+     <ion-button  color="secondary" shape="round" block (click)="autocompletarUsurio2()">Invitado</ion-button>
+     <ion-button class="ion-button-small" shape="round"  color="secondary" block (click)="autocompletarUsurio3()">Usuario</ion-button>
+
+     <br>  <br>
+   </div>
+ 
+ 
+   <br>
+ 
+ 
+ 
+ 
+ </ion-card>
+ 
+ 
+
+</div>
+ </ion-content>

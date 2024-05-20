@@ -1,0 +1,23 @@
+
+
+#container{
+    background-color:  rgba(24, 49, 83, 1); 
+    height: 100%;
+    width: 100%;
+}
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 1s linear infinite; /* Aplica la animación "rotate" */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

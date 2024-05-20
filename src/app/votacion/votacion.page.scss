@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+/* Estilos para ion-content */
+ion-content {
+  --background: rgba(24, 49, 83, 1); /* Cambia el color de fondo */
+  --ion-background-color: transparent; /* Hace que el fondo de ion-content sea transparente */
+  --ion-background-color-rgb: rgba(24, 49, 83, 1); /* También asegúrate de que el fondo sea transparente */
+  --ion-safe-area-top: 0; /* Elimina el espacio en la parte superior */
+  --ion-safe-area-bottom: 0; /* Elimina el espacio en la parte inferior */
+}
+
+/* Estilos para el contenedor principal */
+#container {
+  padding-top: 10px; /* Añade un pequeño espacio en la parte superior */
+  padding-bottom: 10px; /* Añade un pequeño espacio en la parte inferior */
+  overflow-y: auto; /* Agrega scroll si el contenido es demasiado largo */
+}
+
+/* Estilos para los ion-cards */
+ion-card {
+  width: 250px;
+  height: 350px;
+  padding: 10px;
+  background-color: rgb(242, 238, 238);/* Ajusta el color de fondo de los ion-cards */
+  margin: 10px auto; /* Centra los ion-cards horizontalmente */
+}
+
+/* Estilos para los textos */
+ion-text {
+  color: white; /* Cambia el color del texto a blanco */
+}

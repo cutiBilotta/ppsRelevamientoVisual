@@ -1,0 +1,23 @@
+<ion-content>
+  <div id="container" *ngIf="isDataLoaded">
+    <div class="ion-text-center">
+      <ion-text color="light"><h1>Galería de fotos</h1></ion-text>
+      <ion-text color="light"><h2>Cosas {{dato}}s subidas por usuarios</h2></ion-text>
+    </div>
+
+    <div *ngFor="let imagen of imagenes">
+      <br>
+      <ion-card style="margin:auto; height: auto;">
+        <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+          <img [src]="imagen.url" alt="" height="200px" width="200px" style="margin: auto;">
+        </div>
+        <ion-card-header>
+          <ion-card-subtitle>Subido por</ion-card-subtitle>
+          <ion-card-title style="font-size: medium;">{{ imagen.nombre }}</ion-card-title>
+          <ion-card-subtitle>Fecha</ion-card-subtitle>
+          <ion-card-title style="font-size: medium;">{{ imagen.fechaSubida }}</ion-card-title>
+          <ion-button color="secondary" *ngIf="(this.dato == 'linda' && usuarioActual.votoLindo == false) || (this.dato == 'fea' && usuarioActual.votoFeo == false)" (click)="emitirVoto(imagen.url)">Emitir Voto</ion-button>        </ion-card-header>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
